@@ -1,0 +1,6 @@
+*.db
+__pycache__
+.idea
+.pytest_cache
+identifier.sqlite
+#config.py

@@ -10,10 +10,6 @@ message queue.
     git clone git@github.com:Ekwinder/poke_deck.git
     cd poke_deck
 
-### Install dependencies
-
-    pip install -r requirements.txt
-
 ### Run using Docker
 
     docker build -t poke-queue .
@@ -25,8 +21,14 @@ if you want to check with persistent DB on disk
 
 ### Run directly on Unix
 
+#### Setup Virtual Environment
+
     python -m venv poke_queue
     source poke_queue/bin/activate
+    
+    pip install -r requirements.txt #install dependencies
+
+#### Run python app from the entry point
 
     python main.py
 
